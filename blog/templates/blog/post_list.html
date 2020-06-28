@@ -1,17 +1,23 @@
-<head>
-    <title>Eunji's Blog</title>
-</head>
-<body>
-    <div>
-        <h1><a href="/">Eunji's Blog</a></h1>
-    </div>
-    
-    {% for post in posts %}
-    <div>
-        <p>published: {{ post.published_date }}</p>
-        <h2><a href="">{{ post.title }}</a></h2>
-        <p>{{ post.text|linebreaksbr }}</p>
-    </div>
-    {% endfor %}
-    
-</body>
+<html>
+    <head>
+        <title>Eunji's Blog</title>
+    </head>
+
+    <body>
+        <div>
+            <h1><a href="">Eunji's Blog</a></h1>
+        </div>
+
+        <div>
+            <p>published: 28.Jun.2020, 16:00</p>
+            <h2><a href="">My first post</a></h2>
+            <p>Hi there:)</p>
+        </div>
+
+        <div>
+            <p>published: 28.Jun.2020, 16:00</p>
+            <h2><a href="">My second post</a></h2>
+            <p>It works!</p>
+        </div>
+    </body>
+</html>
